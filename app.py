@@ -6,9 +6,7 @@ from video_feature_extractor import extract_all
 from master_interface import analyze
 
 st.set_page_config(page_title="Instructional Video Intelligence",page_icon="🎓",layout="wide")
-st.title("Instructional Video Intelligence")
-st.caption("Upload a raw instructional video → automatic Objective 3 feature extraction → benchmark → design profile")
-st.warning("Research prototype: no causal quality score or guaranteed satisfaction prediction.")
+st.title("INSTRUCTIONAL VIDEO INTELLIGENCE")
 
 model=st.sidebar.selectbox("Whisper speech model",["tiny","base","small"],index=1)
 up=st.file_uploader("Upload instructional video",type=["mp4","mov","m4v","avi","mkv"])
