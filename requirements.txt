@@ -1,6 +1,6 @@
 streamlit>=1.37
 pandas>=2.0
 numpy>=1.24
-opencv-python-headless==4.12.0.88
+opencv-python-headless==4.10.0.84
 scenedetect==0.7.1
 vaderSentiment>=3.3.2
