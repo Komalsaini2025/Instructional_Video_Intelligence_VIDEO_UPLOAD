@@ -133,7 +133,10 @@ def audio_to_wav(video,wav):
 
 def transcript_features(path,model_name="base"):
     _,_,dur=meta(path)
-    import whisper
+    try:
+        import whisper
+    except ImportError:
+        return 0.0, 0.0, ""
     from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
     with tempfile.TemporaryDirectory() as td:
         wav=Path(td)/"audio.wav"; audio_to_wav(path,wav)
